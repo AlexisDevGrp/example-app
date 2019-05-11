@@ -3,7 +3,7 @@ node {
     stage('Clone repository') {
       checkout scm
     }
-    stage('Build image') à
+    stage('Build image') { 
       app = docker.build('AlexisDevGrp/example-app')
     }
     stage('Push Image') {
