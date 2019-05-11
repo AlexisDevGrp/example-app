@@ -4,7 +4,7 @@ node {
       checkout scm
     }
     stage('Build image') { 
-      app = docker.build('AlexisDevGrp/example-app')
+      app = docker.build('alexisdevgrp/example-app')
     }
     stage('Push Image') {
       docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
